@@ -11,7 +11,7 @@ lda2vec: Tools for interpreting natural language
     :target: https://travis-ci.org/cemoody/lda2vec
 
 .. image:: https://img.shields.io/badge/coverage-93%25-green.svg
-    :target: https://travis-ci.org/cemoody/lda2vec
+    :target: https://travis-ci.org/cemoody/lda2vec
 
 .. image:: https://img.shields.io/twitter/follow/chrisemoody.svg?style=social
     :target: https://twitter.com/intent/follow?screen_name=chrisemoody

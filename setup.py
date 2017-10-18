@@ -11,10 +11,14 @@ if os.environ.get('READTHEDOCS', None) == 'True':
 
 kw = dict(
     name='lda2vec',
-    version='0.1',
+    version='0.2',
     description='Tools for interpreting natural language',
     author='Christopher E Moody',
     author_email='chrisemoody@gmail.com',
+    maintainer='Vishwa',
+    maintainer_email='mail@vishwa.xyz',
+    license='MIT',
+    python_requires='>=2.7',
     install_requires=install_requires,
     packages=find_packages(),
     url='')
