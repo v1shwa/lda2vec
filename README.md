@@ -18,9 +18,8 @@ The lda2vec model tries to mix the best parts of word2vec and LDA into a single 
 - [Slide deck](http://www.slideshare.net/ChristopherMoody3/word2vec-lda-and-introducing-a-new-hybrid-algorithm-lda2vec-57135994) and [youtube video](https://www.youtube.com/watch?v=eHcBeVnAiD4) for a presentation focused on the benefits of word2vec, LDA, and lda2vec.
 -  Also see [original README](./README.rst) from the author for a general idea.
 
-### Requirements
-##### Minimum requirements:
-- Python 3.0+
+### Minimum Requirements
+- Python 2.7+
 - NumPy 1.10+
 - Chainer 1.5.1+
 - spaCy 0.99+
