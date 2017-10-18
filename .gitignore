@@ -13,3 +13,6 @@ build
 *.egg-info/
 dist/
 htmlcov/
+__pycache__/
+*.py[cod]
+*$py.class
