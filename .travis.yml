@@ -21,7 +21,7 @@ install:
     - conda create --yes -n testing python=$TRAVIS_PYTHON_VERSION
     - source activate testing
     - conda install --yes nose pip numba cython 
-    - pip install numpy scikit-learn h5py chainer pyxdameraulevenshtein scipy spacy pytest codecov coveralls  pytest-cov
+    - pip install numpy scikit-learn h5py chainer gensim pyxdameraulevenshtein scipy spacy pytest codecov coveralls  pytest-cov
     - python -m spacy.en.download --force all
     - python setup.py install
 

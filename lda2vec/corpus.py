@@ -4,6 +4,7 @@ import numpy as np
 import difflib
 import pandas as pd
 from pyxdameraulevenshtein import damerau_levenshtein_distance_ndarray
+from gensim.models import KeyedVectors
 
 class Corpus():
     _keys_frequency = None
@@ -527,8 +528,7 @@ class Corpus():
         True
         """
         n_words = len(self.compact_to_loose)
-        from gensim.models.word2vec import Word2Vec
-        model = Word2Vec.load_word2vec_format(filename, binary=True)
+        model = KeyedVectors.load_word2vec_format(filename, binary=True)
         n_dim = model.syn0.shape[1]
         data = np.random.normal(size=(n_words, n_dim)).astype('float32')
         data -= data.mean()
