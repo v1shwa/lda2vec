@@ -131,7 +131,7 @@ def topic_coherence(lists, services=['ca', 'cp', 'cv', 'npmi', 'uci',
     >>> topic_coherence(topic_words, services=['cv'])
     {(0, 'cv'): 0.5678879445677241}
     """
-    url = u'http://palmetto.aksw.org/palmetto-webapp/service/{}?words={}'
+    url = 'http://palmetto.aksw.org/palmetto-webapp/service/{}?words={}'
     reqs = [url.format(s, '%20'.join(top[:10])) for s in services for top in lists]
     pool = multiprocessing.Pool()
     coherences = pool.map(get_request, reqs)

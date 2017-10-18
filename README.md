@@ -19,7 +19,7 @@ The lda2vec model tries to mix the best parts of word2vec and LDA into a single 
 -  Also see [original README](./README.rst) from the author for a general idea.
 
 ### Minimum Requirements
-- Python 2.7+
+- Python 3.2+
 - NumPy 1.10+
 - Chainer 1.5.1+
 - spaCy 0.9+
