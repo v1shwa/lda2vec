@@ -22,6 +22,7 @@ The lda2vec model tries to mix the best parts of word2vec and LDA into a single 
 - Python 2.7+
 - NumPy 1.10+
 - Chainer 1.5.1+
-- spaCy 0.99+
+- spaCy 0.9+
 - scikit-learn 0.19.0+
+- pyxdameraulevenshtein 1.4.1+
 - pytest (optional. required for testing)
