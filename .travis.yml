@@ -2,11 +2,7 @@
 
 language: python
 
-env:
-    global:
-        - NUMPY_VERSION=1.12
-
-- python:
+python:
   - "2.7"
   - "3.2"
   - "3.3"
@@ -24,7 +20,7 @@ before_install:
 install:
     - conda create --yes -n testing python=$TRAVIS_PYTHON_VERSION
     - source activate testing
-    - conda install --yes numpy=$NUMPY_VERSION nose pip numba cython scikit-learn h5py
+    - conda install --yes numpy nose pip numba cython scikit-learn h5py
     - pip install -r requirements.txt
     - pip install pytest codecov coveralls  pytest-cov
     - python -m spacy.en.download --force all
